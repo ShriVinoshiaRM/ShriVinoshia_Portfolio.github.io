@@ -1,0 +1,80 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>AirBnb Data Analysis</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					
+
+	<!--			
+					<nav id="nav">
+						<ul class="links">
+							<li><a>AirBnb Data Analysis</a></li>
+							<li class="active"><a href="generic.html">Generic Page</a></li>
+							<li><a href="elements.html">Elements Reference</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+							<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</nav>
+	-->				
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+									<h1>AirBnb Data Analysis</h1>
+									<p>The project focuses on assisting Airbnb in finding the best deals to promote hosts in <br />New York City using a new 
+										social media ad campaign. It requires data collection, data cleaning, <br />and data analysis to help Airbnb decide which 
+										hosts will be promoted. Through this project, <br />I aim to enhance my skills in utilizing open-source data to make better 
+										business decisions.</p>
+								</header>
+								<p>Business Requirement 1 - Identify AirBnb hosts that are $100 per night or less, does not require more than a two night minimum stay, have atleast 100 reviews and are available at least 180 days per year
+									ad campaign to promote
+								<p>Initial data set</p>
+								<div class="image main"><img src="images\Airbnb_1_updated.png" height="350" width="400" alt="" /></div>
+								<p>Removing rows that have empty fields</p>
+								<div class="image main"><img src="images\Airbnb_2_updated.png"  alt="" /></div>
+								<p>Dropping duplicate rows, filtering rows based on the business requirement and sorting results by neighbourhood group and last review</p>
+								<div class="image main"><img src="images\Airbnb_4_updated.png"  alt="" /></div>
+								<p>Grouping results by neighbourhood group and ranking by price to identify AirBnb hosts satisfying the business requirement</p>
+								<div class="image main"><img src="images\Airbnb_3_updated.png"  alt="" /></div>
+								<p>After analysis it has been found that the neighbourhood groups Brooklyn, Manhattan, Queens, Bronx and Staten Island are eligible to be promoted on the AirBnb ad campaign. 
+									Brooklyn (231 units) and Manhattan (143 units) are the two most popular neighbourhood groups of NYC. 
+								</p>
+								Business Requirement 2 - For the two most popular neighbourhood groups of NYC, determine how many luxury units cost more than $1000 per night and have a minimum stay of one or two nights.</p>
+								<p>Filtering data based on the business requirement</p>
+								<div class="image main"><img src="images\Airbnb_5_updated.png" alt="" /></div>
+								
+								<p>The results state that 46 luxury units available in the neighbourhood groups Brooklyn and Manhattan are eligible to be promoted on the ad campaign</p>
+								
+							</section>
+
+					</div>
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
