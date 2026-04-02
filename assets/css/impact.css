@@ -2,138 +2,91 @@
    impact.css — Supply Chain in Numbers page
    Place in assets/css/ and link in impact.html
    ========================================= */
-<!DOCTYPE HTML>
-<html>
-<head>
-  <title>Supply Chain in Numbers | Shri Vinoshia</title>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+/* Layout */
+#impact-body {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2em;
+}
 
-  <!-- Main Theme -->
-  <link rel="stylesheet" href="assets/css/main.css" />
-  <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+/* Section */
+.section-block {
+  margin-bottom: 3em;
+}
 
-  <!-- Custom Styles -->
-  <link rel="stylesheet" href="assets/css/impact.css" />
-</head>
+.section-block h3 {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 1.5em;
+}
 
-<body class="is-preload">
-<div id="wrapper" class="fade-in">
+/* Grid */
+.impact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5em;
+}
 
-  <!-- Header -->
-  <header id="header">
-    <a href="index.html" class="logo">Shri Vinoshia · Portfolio</a>
-  </header>
+/* Card */
+.stat-card {
+  background: linear-gradient(145deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02));
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 10px;
+  padding: 1.6em 1.2em;
+  text-align: center;
 
-  <!-- Nav -->
-  <nav id="nav">
-    <ul class="links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="projects.html">Projects</a></li>
-      <li class="active"><a href="impact.html">Supply Chain in Numbers</a></li>
-      <li><a href="timeline.html">Career Timeline</a></li>
-    </ul>
-  </nav>
+  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+  transition: all 0.25s ease;
 
-  <!-- Main -->
-  <div id="main">
+  position: relative;
+  overflow: hidden;
+}
 
-    <article class="post featured">
-      <header class="major">
-        <h2>Supply Chain in Numbers</h2>
-        <p>
-          A snapshot of measurable impact across forecasting, planning, and operations —
-          from battery gigafactories to global vehicle programs.
-        </p>
-      </header>
-    </article>
+/* Hover */
+.stat-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px rgba(0,0,0,0.35);
+  border-color: rgba(255,255,255,0.25);
+}
 
-    <div id="impact-body">
+/* Glow effect */
+.stat-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -50%;
+  width: 200%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(255,255,255,0.08),
+    transparent
+  );
+  opacity: 0;
+  transition: 0.3s;
+}
 
-      <!-- Impact Stats -->
-      <div class="section-block">
-        <h3>Impact at a Glance</h3>
+.stat-card:hover::before {
+  opacity: 1;
+}
 
-        <div class="impact-grid">
+/* Text */
+.stat-card .number {
+  font-size: 2.4em;
+  font-weight: 700;
+  color: #5ec8ff;
+}
 
-          <div class="stat-card">
-            <span class="number">$100M+</span>
-            <span class="label">Combined savings delivered</span>
-            <span class="company">Tesla</span>
-          </div>
+.stat-card .label {
+  margin-top: 0.5em;
+  font-size: 0.9em;
+  color: rgba(255,255,255,0.7);
+}
 
-          <div class="stat-card">
-            <span class="number">$6M+</span>
-            <span class="label">Revenue boost via supply planning models</span>
-            <span class="company">Redwood Materials · Q4 '25</span>
-          </div>
-
-          <div class="stat-card">
-            <span class="number">$4.2M</span>
-            <span class="label">Cost savings from inventory optimization</span>
-            <span class="company">Redwood Materials</span>
-          </div>
-
-          <div class="stat-card">
-            <span class="number">$500K</span>
-            <span class="label">Revenue uplift via transshipment strategy</span>
-            <span class="company">Redwood Materials · Q1 '26</span>
-          </div>
-
-          <div class="stat-card">
-            <span class="number">$45M</span>
-            <span class="label">Buffer optimization savings</span>
-            <span class="company">Tesla</span>
-          </div>
-
-          <div class="stat-card">
-            <span class="number">$40M</span>
-            <span class="label">Capacity & process optimization</span>
-            <span class="company">Tesla</span>
-          </div>
-
-          <div class="stat-card">
-            <span class="number">$20M</span>
-            <span class="label">Intermodal logistics savings</span>
-            <span class="company">Tesla</span>
-          </div>
-
-          <div class="stat-card">
-            <span class="number">83%</span>
-            <span class="label">Kiln blend adherence (from 27%)</span>
-            <span class="company">Redwood Materials</span>
-          </div>
-
-          <div class="stat-card">
-            <span class="number">20%</span>
-            <span class="label">Throughput improvement</span>
-            <span class="company">Redwood Materials</span>
-          </div>
-
-          <div class="stat-card">
-            <span class="number">15%</span>
-            <span class="label">Schedule deviation reduction</span>
-            <span class="company">Redwood Materials</span>
-          </div>
-
-          <div class="stat-card">
-            <span class="number">95%</span>
-            <span class="label">Production rate in 1 month</span>
-            <span class="company">Tesla</span>
-          </div>
-
-          <div class="stat-card">
-            <span class="number">2000+</span>
-            <span class="label">VORs closed (Semi builds)</span>
-            <span class="company">Tesla</span>
-          </div>
-
-        </div>
-      </div>
-
-    </div>
-  </div>
-
-</div>
-</body>
-</html>
+.stat-card .company {
+  margin-top: 0.3em;
+  font-size: 0.75em;
+  color: rgba(255,255,255,0.4);
+  font-style: italic;
+}
