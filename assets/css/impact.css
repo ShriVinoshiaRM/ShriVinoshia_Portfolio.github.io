@@ -1,98 +1,62 @@
-/* Layout */
+/* =========================================
+   impact.css — Supply Chain in Numbers page
+   Place in assets/css/ and link in impact.html
+   ========================================= */
+ 
 #impact-body {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 2em;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2em 2em 4em;
 }
-
-/* Section */
+ 
+/* Section headings */
 .section-block {
-  margin-bottom: 3em;
+  margin-bottom: 3.5em;
 }
-
+ 
 .section-block h3 {
-  font-size: 1.2em;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  margin-bottom: 1.5em;
-  border-bottom: 1px solid rgba(255,255,255,0.15);
-  padding-bottom: 0.5em;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  border-bottom: 1px solid rgba(255,255,255,0.15);
+  padding-bottom: 0.5em;
+  margin-bottom: 1.2em;
 }
-
-/* Grid */
+ 
+/* ---- Stat Cards ---- */
 .impact-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 1.5em;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 1.2em;
 }
-
-/* Card */
+ 
 .stat-card {
- /*  background: linear-gradient(145deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02)); */
-  background: rgba(255,255,255,0.04);
-  border: 1px solid rgba(255,255,255,0.1);
-  border-radius: 10px;
-  padding: 1.6em 1.2em;
-  text-align: center;
-
-  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
-  transition: all 0.25s ease;
-
-  position: relative;
-  overflow: hidden;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 6px;
+  padding: 1.4em 1em;
+  text-align: center;
+  transition: background 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
 }
-
-/* Hover */
+ 
 .stat-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 18px 40px rgba(0,0,0,0.35);
-  border-color: rgba(255,255,255,0.1);
+  background: rgba(255,255,255,0.09);
+  border-color: rgba(255,255,255,0.35);
+  transform: translateY(-3px);
 }
-
-/* Glow effect */
-/*.stat-card::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: -50%;
-  width: 200%;
-  height: 100%;
-  background: linear-gradient(
-    120deg,
-    transparent,
-    rgba(255,255,255,0.04),
-    transparent
-  );
-  opacity: 0;
-  transition: 0.3s;
-}
-
-.stat-card:hover::before {
-  opacity: 1;
-}
-*/
-
-/* Text */
+ 
 .stat-card .number {
-  font-size: 2.4em;
-  font-weight: 700;
-  color: #ffffff;
-  display: block;
-  line-height:1.1;
+  font-size: 2em;
+  font-weight: 700;
+  color: #ffffff;
+  display: block;
+  line-height: 1.1;
 }
-
+ 
 .stat-card .label {
-  margin-top: 0.5em;
-  font-size: 0.9em;
-  color: rgba(255,255,255,0.5);
-  display: block;
-  line-height:1.1;
-}
-
-.stat-card .company {
-  margin-top: 0.3em;
-  font-size: 0.75em;
-  color: rgba(255,255,255,0.28);
-  display: block;
-  font-style: italic;
+  font-size: 0.82em;
+  color: rgba(255,255,255,0.5);
+  margin-top: 0.4em;
+  display: block;
+  line-height: 1.4;
 }
