@@ -11,9 +11,12 @@
 }
 
 .section-block h3 {
+  font-size: 1.2em;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   margin-bottom: 1.5em;
+  border-bottom: 1px solid rgba(255,255,255,0.15);
+  padding-bottom: 0.5em;
 }
 
 /* Grid */
@@ -25,8 +28,9 @@
 
 /* Card */
 .stat-card {
-  background: linear-gradient(145deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02));
-  border: 1px solid rgba(255,255,255,0.12);
+ /*  background: linear-gradient(145deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02)); */
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.1);
   border-radius: 10px;
   padding: 1.6em 1.2em;
   text-align: center;
@@ -72,17 +76,22 @@
   font-size: 2.4em;
   font-weight: 700;
   color: #ffffff;
+  display: block;
+  line-height:1.1;
 }
 
 .stat-card .label {
   margin-top: 0.5em;
   font-size: 0.9em;
   color: rgba(255,255,255,0.5);
+  display: block;
+  line-height:1.1;
 }
 
 .stat-card .company {
   margin-top: 0.3em;
   font-size: 0.75em;
   color: rgba(255,255,255,0.28);
+  display: block;
   font-style: italic;
 }
