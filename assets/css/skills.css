@@ -1,0 +1,88 @@
+ 
+/* =========================================
+   skills.css — Skills page
+   Place in assets/css/ and link in skills.html
+   ========================================= */
+ 
+#skills-body {
+max-width: 1100px;
+margin: 0 auto;
+padding: 2em 2em 4em;
+}
+ 
+/* Section blocks */
+.skill-section {
+margin-bottom: 3em;
+}
+ 
+.skill-section h3 {
+font-size: 1.2em;
+text-transform: uppercase;
+letter-spacing: 0.1em;
+border-bottom: 1px solid rgba(255,255,255,0.15);
+padding-bottom: 0.5em;
+margin-bottom: 1.2em;
+}
+ 
+/* Skill card grid */
+.skill-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+gap: 1em;
+}
+ 
+.skill-card {
+background: rgba(255,255,255,0.04);
+border: 1px solid rgba(255,255,255,0.1);
+border-radius: 6px;
+padding: 1em 1.2em;
+display: flex;
+align-items: center;
+transition: background 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+}
+ 
+.skill-card:hover {
+background: rgba(255,255,255,0.09);
+border-color: rgba(255,255,255,0.35);
+transform: translateY(-3px);
+}
+ 
+.skill-name {
+font-size: 0.88em;
+color: rgba(255,255,255,0.75);
+}
+ 
+/* Certifications */
+.cert-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+gap: 1em;
+}
+ 
+.cert-card {
+background: rgba(255,255,255,0.04);
+border: 1px solid rgba(255,255,255,0.15);
+border-radius: 6px;
+padding: 1.2em 1.4em;
+display: flex;
+align-items: center;
+gap: 0.8em;
+transition: background 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+}
+ 
+.cert-card:hover {
+background: rgba(255,255,255,0.09);
+border-color: rgba(255,255,255,0.35);
+transform: translateY(-3px);
+}
+ 
+.cert-icon {
+font-size: 1em;
+color: rgba(255,255,255,0.4);
+}
+ 
+.cert-name {
+font-size: 0.9em;
+color: rgba(255,255,255,0.8);
+font-weight: 600;
+}
