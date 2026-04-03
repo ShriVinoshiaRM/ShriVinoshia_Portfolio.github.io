@@ -86,3 +86,7 @@
   color: rgba(0,0,0,0.4);
   font-style: italic;
 }
+
+.stat-card span {
+  display: block !important;
+}
