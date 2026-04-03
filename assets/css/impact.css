@@ -69,24 +69,23 @@
 
 /* Text */
 .stat-card .number {
+  display: block;
   font-size: 2.4em;
   font-weight: 700;
   color: #5ec8ff;
 }
 
 .stat-card .label {
+  display: block;
   margin-top: 0.5em;
   font-size: 0.9em;
   color: rgba(0,0,0,0.7);
 }
 
 .stat-card .company {
+  display: block;
   margin-top: 0.3em;
   font-size: 0.75em;
   color: rgba(0,0,0,0.4);
   font-style: italic;
-}
-
-.stat-card span {
-  display: block !important;
 }
