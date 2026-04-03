@@ -97,11 +97,26 @@
   padding: 1.5em;
   margin-bottom: 2em;
 }
-
+/*
 .company-label {
   font-size: 0.82em;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   color: rgba(0,0,0,0.4);
   margin-bottom: 1.2em;
+}
+*/
+.company-label {
+  background: #000;
+  color: #fff;
+  padding: 1em 1.4em;
+
+  font-weight: 700;
+  font-size: 1.1rem;
+  letter-spacing: 0.03em;
+
+  border-left: 4px solid #000000; /* accent line */
+  border-radius: 6px;
+
+  margin: 2em 0 1.2em 0;
 }
