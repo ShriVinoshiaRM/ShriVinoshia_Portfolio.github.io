@@ -89,3 +89,19 @@
   color: rgba(0,0,0,0.4);
   font-style: italic;
 }
+
+/* ---- Company Blocks ---- */
+.company-block {  
+  border: 1px solid rgba(0,0,0,0.12);
+  border-radius: 8px;
+  padding: 1.5em;
+  margin-bottom: 2em;
+}
+
+.company-label {
+  font-size: 0.82em;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: rgba(0,0,0,0.4);
+  margin-bottom: 1.2em;
+}
